@@ -1,0 +1,9 @@
+{
+  "title": "AI Text Paraphraser by JustDone",
+  "description": "Transform your writing from good to great with our Paraphraser tool.",
+  "inputPlaseholder": "Enter text here or upload file to humanize it.",
+  "pasteText": "Paste text",
+  "sampleText": "Sample text",
+  "paraphrase": { "start": "Paraphrase", "inProgress": "Paraphrasing" },
+  "clearInput": "Clear input"
+}
