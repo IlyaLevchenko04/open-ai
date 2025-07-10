@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Text Paraphraser by JustDone
+
+Transform your writing from good to great with our AI-powered Paraphraser tool. This web app leverages advanced AI models (OpenAI and Google Gemini) to help you humanize, rephrase, and improve your text with ease.
+
+## Features
+- **AI-Powered Paraphrasing**: Uses both OpenAI and Gemini models with automatic fallback for reliability.
+- **Simple UI**: Paste, type, or use sample text. One click to paraphrase.
+- **Fast & Secure**: Your text is processed securely via API.
+- **Modern Stack**: Built with Next.js, React, Tailwind CSS, and MUI.
 
 ## Getting Started
 
-First, run the development server:
-
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repo-url>
+cd openAI-proj
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Set up API Keys
+Create a `.env.local` file in the project root with the following variables:
+```env
+OPENAI_API_KEY=your-openai-api-key
+GEMINI_API_KEY=your-gemini-api-key
+```
+You can obtain API keys from [OpenAI](https://platform.openai.com/) and [Google AI Studio](https://aistudio.google.com/).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the development server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Usage
+1. Enter or paste your text in the input area.
+2. Click **Paraphrase**.
+3. View the paraphrased result below.
+4. Use the clear button to reset and try again.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
+- `src/app/` – Next.js app directory and API routes
+- `src/features/` – Main paraphrasing UI logic
+- `src/services/` – AI provider integrations (OpenAI, Gemini)
+- `src/utils/ai/` – AI manager with provider fallback logic
+- `src/shared/texts/` – UI text and descriptions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+MIT
