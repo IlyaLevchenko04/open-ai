@@ -5,5 +5,6 @@
   "pasteText": "Paste text",
   "sampleText": "Sample text",
   "paraphrase": { "start": "Paraphrase", "inProgress": "Paraphrasing" },
-  "clearInput": "Clear input"
+  "clearInput": "Clear input",
+  "textForPasting": "Artificial intelligence is rapidly transforming industries across the globe. From automating repetitive tasks to enabling advanced data analysis, AI is helping organizations operate more efficiently and make smarter decisions. However, as the technology continues to evolve, ethical considerations and responsible implementation remain crucial."
 }
